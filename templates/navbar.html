@@ -1,0 +1,43 @@
+{% load static %}
+<header id="Header">
+
+    <div id="Top_bar">
+        <div class="container">
+            <div class="column one">
+                <div class="top_bar_left clearfix">
+                    <div class="logo">
+                        <a id="logo" href="index-astrology.html" title="BeAstrology - Betheme" data-height="60" data-padding="15"><img class="logo-main scale-with-grid" src="{% static 'images/astrology-logo.png' %}" data-retina="{% static 'images/astrology-logo-x2.png' %}" data-height="19" alt="astrology-logo" data-no-retina><img class="logo-sticky scale-with-grid" src="{% static 'images/astrology-logo.png' %}" data-retina="{% static 'images/astrology-logo-x2.png' %}" data-height="19" alt="astrology-logo" data-no-retina><img class="logo-mobile scale-with-grid" src="{% static 'images/astrology-logo.png' %}" data-retina="{% static 'images/astrology-logo-x2.png' %}" data-height="19" alt="astrology-logo" data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="{% static 'images/astrology-logo.png' %}" data-retina="{% static 'images/astrology-logo-x2.png' %}" data-height="19" alt="astrology-logo" data-no-retina></a>
+                    </div>
+                    <div class="menu_wrapper">
+                        <nav id="menu">
+                            <ul id="menu-menu" class="menu menu-main">
+                                <li class="{% if '/onirix/home' == request.path %} current-menu-item current_page_parent current-menu-item {% endif %}">
+                                    <a href="{% url 'home' %}"><span>Home</span></a>
+                                </li>
+                                <li class="{% if '/onirix/about' == request.path %} current-menu-item current_page_parent current-menu-item {% endif %}">
+                                    <a href="{% url 'about' %}"><span>About us</span></a>
+                                </li>
+                                <li class="{% if '/onirix/horoscope' == request.path %} current-menu-item current_page_parent current-menu-item {% endif %}">
+                                    <a href="{% url 'horoscope' %}"><span>Horoscopes</span></a>
+                                </li>
+                                <li class="{% if '/onirix/form' == request.path %} current-menu-item current_page_parent current-menu-item {% endif %}">
+                                    <a href="{% url 'dream-form' %}"><span>Predict Now</span></a>
+                                </li>
+                                <li class="{% if '/onirix/profile' == request.path %} current-menu-item current_page_parent current-menu-item {% endif %}">
+                                    <a href="{% url 'profile' %}"><span>Profile</span></a>
+                                </li>
+                                <li class="{% if '/account/login' == request.path %} current-menu-item current_page_parent current-menu-item {% endif %}">
+                                    <a href="{% url 'login' %}"><span>Log in</span></a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'logout' %}"><span>Log out</span></a>
+                                </li>
+                            </ul>
+                        </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

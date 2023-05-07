@@ -1,0 +1,19 @@
+- Change Allowed hosts.
+- Check if template comes with mark penalty.
+- Set Debug to False.
+- Check if comments are required and delete them.
+- Add Captcha
+- Popups should be well defined
+
+ACCOUNT APP
+- Add more fields from register and also password validation.
+- Try add notifications for actions(register, login, logout).
+- Handle Password Length error but no show.
+- Check for if user already exists before registration.
+- Add UserProfile creation to createsuperuser method in Account Class
+
+USER PROFILE APP
+- Add more fields related to dream prediction.
+- Edit Profile age conversion error.
+
+ABOUT US LINK

@@ -1,0 +1,28 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/loading.css' %}">
+    <title>Loading...</title>
+
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="loader"></div>
+        <div class="text">Generating Predictions</div>
+    </div>
+
+    <script>
+        setTimeout(()=>{
+            const container = document.getElementById('container')
+            container.innerHTML = '<div class="soon">COMING SOON IN VERSION 2</div><a style="color:gold" href="{% url "home" %}" class="home">Go back home</a>'
+            soon = document.getElementById('home')
+            container.style.fontSize = '2em'
+            container.style.color = 'white'
+            home.style.color = 'gold'
+        }, 5000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="Content">
+    <div class="content_wrapper clearfix">
+        <div class="sections_group">
+            <div class="entry-content">
+                <div class="section mcb-section mcb-section-17b0b403a bg-cover" style="padding-top:260px;padding-bottom:155px;background-image:url(images/astro-contact-header-bg.jpg);background-repeat:no-repeat;background-position:center bottom">
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap mcb-wrap-6172488df one valign-top clearfix">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column mcb-item-f7c6bed8b one column_column">
+                                    <div class="column_attr clearfix align_center">
+                                        <h1>Fill the form below to Login</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                        <div class="wrap mcb-wrap mcb-wrap-1fqjahb6g one valign-top clearfix" style="padding:40px 40px 0 40px;background-color:#bc9239">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column mcb-item-d1fgwzgse one column_column">
+                                    <div class="column_attr clearfix align_center">
+                                        <h2 style="color:#fff">Enter your credentials</h2>
+                                        <hr class="no_line" style="margin:0 auto 15px">
+                                        <div id="contactWrapper">
+                                            <form id="contactform" action="{% url 'login' %}" method="POST">
+                                                {% csrf_token %}
+                                                <div class="column one-second">
+                                                    <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                </div>
+                                                <div class="column one-second">
+                                                    <input placeholder="Enter Password" type="password" name="password" id="subject" size="40" aria-invalid="false" />
+                                                </div>
+                                                <div class="column one">
+                                                    <input type="submit" value="Login" id="submit">
+                                                </div>
+                                            </form>
+                                            Don't have an Account?<a style="color: white;" href="{% url 'register' %}">Register here</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

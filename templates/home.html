@@ -1,0 +1,443 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{%load static%}
+
+<div class="mfn-main-slider mfn-rev-slider">
+    <p class="rs-p-wp-fix"></p>
+    <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+        <rs-module id="rev_slider_1_1" style="display:none;" data-version="6.2.2">
+            <rs-slides>
+                <rs-slide data-key="rs-1" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+                    <img src="{% static 'images/astro-main-bg.jpg' %}" class="rev-slidebg" data-no-retina>
+                    <rs-layer id="slider-1-slide-1-layer-0" data-type="text" data-color="#d4af5f" data-rsp_ch="on" data-xy="x:c;y:m;yo:-40px,-40px,-135px,-135px;" data-text="w:normal;s:64,64,58,58;l:74,74,69,69;a:center;" data-frame_0="x:0,0,0px,0px;y:0,0,0px,0px;" data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;"
+                        data-frame_999="o:0;st:w;" style="z-index:8;font-family:Libre Baskerville;">
+                        Your future
+                        <br> has always been written
+                        <br> in the stars behind your eyes.
+                    </rs-layer><a id="slider-1-slide-1-layer-1" class="rs-layer rev-btn" href="{% url 'dream-form' %}" target="_self" rel="noopener" data-type="button" data-rsp_ch="on" data-xy="x:c;xo:90px,90px,96px,96px;yo:531px,531px,522px,522px;"
+                        data-text="w:normal;s:20,20,21,21;l:45,45,46,46;fw:500;a:center;" data-dim="w:161px,161px,177px,177px;minh:0px,0px,none,0px;" data-padding="r:25,25,28,28;b:4,4,0,0;l:25,25,28,28;" data-frame_0="x:0,0,0px,0px;y:0,0,0px,0px;"
+                        data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;" data-frame_999="o:0;st:w;" data-frame_hover="bgc:#835b9b;bor:0px,0px,0px,0px;bri:120%;" style="z-index:10;background-color:#773d9c;font-family:EB Garamond;cursor:pointer;">Start now </a>
+                    <rs-layer id="slider-1-slide-1-layer-2" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="x:c;xo:-90px,-90px,-96px,-96px;yo:531px,531px,522px,522px;" data-text="w:normal;s:20,20,21,21;l:45,45,46,46;fw:500;a:center;" data-dim="w:161px,161px,177px,177px;minh:0px,0px,none,0px;"
+                        data-actions="o:click;a:scrollbelow;offset:200px;sp:1000ms;e:power1.inOut;" data-padding="r:25,25,29,29;b:4,4,0,0;l:25,25,29,29;" data-frame_0="x:0,0,0px,0px;y:0,0,0px,0px;" data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;"
+                        data-frame_999="o:0;st:w;" data-frame_hover="bgc:#bc9a51;bor:0px,0px,0px,0px;bri:120%;" style="z-index:9;background-color:#bc9239;font-family:EB Garamond;cursor:pointer;">
+                        Learn more
+                    </rs-layer>
+                </rs-slide>
+            </rs-slides>
+            <rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+        </rs-module>
+
+    </rs-module-wrap>
+</div>
+</header>
+</div>
+<div id="Content">
+<div class="content_wrapper clearfix">
+<div class="sections_group">
+    <div class="entry-content">
+        <div class="section mcb-section mcb-section-57xu159uf no-margin-v" id="destiny" style="padding-bottom:150px">
+            <div class="section_wrapper mcb-section-inner">
+                <div class="wrap mcb-wrap mcb-wrap-w4n978cni one valign-top move-up clearfix" style="margin-top:-100px">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-t00bkxgd8 one column_image">
+                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border" style="margin-bottom:50px;">
+                                <div class="image_wrapper"><img class="scale-with-grid" src="{% static 'images/astro-home-icon-main-section-2.png' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-t7etk8okj one valign-top clearfix">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-ufmxd2r4r one column_column column-margin-20px">
+                            <div class="column_attr clearfix align_center">
+                                <h2>Choose your Zodiac sign
+                                    <br> to know what awaits you in the future</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-hoyw5pyh9 one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-1seb5hzcf one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-9.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-kfhgpjjh7 one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Aquarius</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-u125ebzle one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-2ikgf3aub one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-10.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-xb477q93h one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Pisces</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-o7605hwa4 one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-tk8xpo4f9 one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-12.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-xi1g7rted one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Aries</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-8bouejj2g one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-8tmptl6xv one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-11.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-57l6mmvfa one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Taurus</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-qfyo6k7zy divider valign-top clearfix">
+                    <div class="mcb-wrap-inner"></div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-zjk3potji one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-5m2d1xrwy one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-3.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-ogs3crfhm one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Gemini</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-mhru7t9bi one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-xehwp42sw one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-2.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-nzdvek2sy one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Cancer</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-sw9rjerjl one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-979w7vwoj one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-4.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-jod31hflh one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Ico</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-xebqyii6c one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-31opm42cx one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-1.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-dnoj0w21a one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Virgo</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-27nehhasc divider valign-top clearfix">
+                    <div class="mcb-wrap-inner"></div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-uf7a33pil one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-5rjwdv0q3 one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-5.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-3et3w7kil one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Scorpio</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-oi6semzqh one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-8q8d307fn one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-8.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-k190amyrn one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Sagittarius</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-6rskvtjza one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-mafuuowos one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-7.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-d7xsvqfck one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Aquarius</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-8p4eb5rka one-fourth valign-top clearfix" style="padding:0 0 30px 0">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-iivhpwlj7 one column_image">
+                            <div class="image_frame image_item scale-with-grid aligncenter no_border hover-disable">
+                                <div class="image_wrapper">
+                                    <a href="horoscopes.html">
+                                        <div class="mask"></div><img class="scale-with-grid" src="{% static 'images/astro-home-zodiak-6.png' %}"></a>
+                                    <div class="image_links">
+                                        <a href="horoscopes.html" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-6eryncgh4 one column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h6>Libra</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mcb-section mcb-section-3k0cqhh2r bg-cover" style="padding-top:50px;padding-bottom:300px;background-image:url(images/astro-home-clouds.png);background-repeat:no-repeat;background-position:center bottom">
+            <div class="section_wrapper mcb-section-inner">
+                <div class="wrap mcb-wrap mcb-wrap-1hmh67qqt one valign-top clearfix">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-5ossf5xb5 one column_image">
+                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                <div class="image_wrapper"><img class="scale-with-grid" src="{% static 'images/astro-home-moon-cycle.png' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-pl57o6qrd one valign-top move-up clearfix" style="margin-top:-75px">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-epavg53i4 one-sixth column_placeholder">
+                            <div class="placeholder">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-4910nm135 two-third column_column">
+                            <div class="column_attr clearfix align_center">
+                                <h3>Don't wait for things to happen,
+                                    <br> discover your life path today</h3>
+                                <hr class="no_line" style="margin:0 auto 30px">
+                                <p style="color:#fff;">
+
+                                    Are you looking for a unique and personalized way to explore your future? Look no further! Our service offers a groundbreaking approach to dream analysis and future prediction, powered by the latest advancements in AI technology. Whether you're a Leo seeking clarity in your love life, a Taurus hoping to make strides in your career, or a Sagittarius curious about what the future holds for your personal growth, our service is tailored to meet your specific needs. With our user-friendly interface and expert analysis, you'll gain valuable insights and guidance to help you navigate life's many paths. Don't wait to start your journey towards a brighter future – join us now for an exclusive and empowering experience.                                </p>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-b93jpmubq one column_button">
+                            <div class="button_align align_center">
+                                <a class="button button_size_2 button_dark button_js" href="{% url 'dream-form' %}"><span class="button_label">Start now</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mcb-section mcb-section-qg1l2yjlg" style="background-color:#f6f4f0">
+            <div class="section_wrapper mcb-section-inner">
+                <div class="wrap mcb-wrap mcb-wrap-zzhvj4qf6 one valign-top clearfix">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-w3lwzgv97 one column_blog_teaser">
+                            <div class="blog-teaser">
+                                <ul class="teaser-wrapper">
+                                    <li class="post-65 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                                        <div class="photo-wrapper scale-with-grid"><img width="960" height="720" src="{% static 'images/astro-blog-post-1-960x720.jpg' %}" class="scale-with-grid wp-post-image" alt>
+                                        </div>
+                                        <div class="desc-wrapper">
+                                            <div class="desc">
+                                                <div class="post-meta clearfix">
+                                                    <span class="author"><span class="label">Published by </span><i class="icon-user"></i> <a href="#">Mancini</a></span><span class="date"><span class="label">on </span><i class="icon-clock"></i>                                                                    <span class="post-date">March 13, 1956</span></span>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h3><a href="{% url 'about' %}">Infinite Time   </a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="post-64 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                                        <div class="photo-wrapper scale-with-grid"><img width="960" height="720" src="{% static 'images/astro-blog-post-2-960x720.jpg' %}" class="scale-with-grid wp-post-image" alt>
+                                        </div>
+                                        <div class="desc-wrapper">
+                                            <div class="desc">
+                                                <div class="post-meta clearfix">
+                                                    <span class="author"><span class="label">Published by </span><i class="icon-user"></i> <a href="#">Robert Danli</a></span><span class="date"><span class="label">on </span><i class="icon-clock"></i>                                                                    <span class="post-date">January 7, 1887</span></span>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h4><a href="{% url 'about' %}">Dream Forest</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="post-61 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                                        <div class="photo-wrapper scale-with-grid"><img width="960" height="720" src="{% static 'images/astro-blog-post-3-960x720.jpg' %}" class="scale-with-grid wp-post-image" alt>
+                                        </div>
+                                        <div class="desc-wrapper">
+                                            <div class="desc">
+                                                <div class="post-meta clearfix">
+                                                    <span class="author"><span class="label">Published by </span><i class="icon-user"></i> <a href="#">Georgio Fugazzi</a></span><span class="date"><span class="label">on </span><i class="icon-clock"></i>                                                                    <span class="post-date">November 12, 1991</span></span>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h4><a href="{% url 'about' %}">Man of Wood</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mcb-section mcb-section-kts75c3lx equal-height-wrap bg-cover" style="padding-top:75px;background-color:#f6f4f0">
+            <div class="section_wrapper mcb-section-inner">
+                <div class="wrap mcb-wrap mcb-wrap-87jq2h3pd one-second valign-middle clearfix">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-x1gv67exj one column_image">
+                            <div class="image_frame image_item no_link scale-with-grid no_border">
+                                <div class="image_wrapper"><img class="scale-with-grid" src="{% static 'images/astro-home-lady2.png' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap mcb-wrap mcb-wrap-vumyvocl0 one-second valign-middle clearfix" style="padding:0 5%">
+                    <div class="mcb-wrap-inner">
+                        <div class="column mcb-column mcb-item-75qdc2x7f one column_column">
+                            <div class="column_attr clearfix">
+                                <h2>My name is Teresa, an expert in psychological prediction</h2>
+                                <hr class="no_line" style="margin:0 auto 10px">
+                                <p>
+                                    Hello, I am an AI language model designed to assist and provide insights on various topics. My advanced algorithms enable me to analyze and process vast amounts of information quickly, which allows me to assist you in finding solutions and answers to your questions accurately and efficiently. Whether you are seeking guidance on dream analysis, horoscopes, or predicting the future, I am here to help. My capabilities include natural language processing, sentiment analysis, and machine learning, which makes me a powerful tool for all your needs. Let me help you uncover hidden insights and gain a deeper understanding of the world around you.                                </p>
+                            </div>
+                        </div>
+                        <div class="column mcb-column mcb-item-oukzuf2r2 one column_button">
+                            <a class="button button_size_2 button_dark button_js" href="{% url 'about' %}"><span class="button_label">Learn more</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+<div id="ad" style="z-index: +50; position: fixed; top: 20%; left: 20%; width: 60%; height: 60%; background-color: black; color: white; text-align: center; padding: 20px; border: 5px solid red; box-shadow: 0 0 10px red;">
+    <img src="{% static 'images/admage.jpg' %}" style="width: 100%; max-height: 80%; object-fit: contain;">
+    <p style="color: red;">Suffering from nightmares? <a href="{% url 'dream-form' %}">Click here to get professional help!</a></p>
+    <button onclick="closeAd()" style="position: absolute; top: 10px; right: 10px; padding: 5px; background-color: white; color: black; border: none; font-weight: bold; cursor: pointer;">X</button>
+</div>
+
+{% endblock content %}

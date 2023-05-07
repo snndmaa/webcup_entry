@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <div id="Subheader">
+       <div class="container">
+           <div class="column one">
+               <h1 class="title">Please fill our A.I Data Form below    </h1>
+           </div>
+       </div>
+   </div>
+   </div>
+   <div id="Content">
+   <div class="content_wrapper clearfix">
+       <div class="sections_group">
+   
+           <form id="section2" class="section2" action="{% url 'dream-form' %}" method="post">
+                {% csrf_token %}
+               <div class="question_section">
+                   <div class="question_text">
+                       What are the  details of the dream?
+                   </div>
+                   <Textarea id="dream_detail" name="dream_detail" class="question_detail" onclick="cursorStart(0)">
+   
+                   </Textarea>
+               </div>
+
+               <div class="question_section">
+                <div class="question_text">
+                    What emotions did you experience during the dream?
+                </div>
+                <Textarea name="emotion_during_detail" class="question_detail" onclick="cursorStart(1)">
+                    
+                </Textarea>
+                </div>
+
+                <div class="question_section">
+                    <div class="question_text">
+                        What emotions did you experience waking up from the dream?
+                    </div>
+                    <Textarea name="emotion_waking_detail" class="question_detail" onclick="cursorStart(2)">
+                        
+                    </Textarea>
+                </div>
+
+                <div class="question_section">
+                    <div class="question_text">
+                        What events or experiences in your life might relate to the dream?
+                    </div>
+                    <Textarea name="event_related_detail" class="question_detail" onclick="cursorStart(3)">
+                        
+                    </Textarea>
+                </div>
+
+                <div class="question_section">
+                    <div class="question_text">
+                        What do you think the dream might symbolize?
+                    </div>
+                    <Textarea name="dream_symbolize_detail" class="question_detail" onclick="cursorStart(4)">
+                        
+                    </Textarea>
+                </div>
+
+                <div class="question_section">
+                    <div class="question_text">
+                        Have you had similar dreams of this kind before?
+                    </div>
+                    <Textarea name="similar_dream_detail" class="question_detail" onclick="cursorStart(5)">
+                        
+                    </Textarea>
+                </div>
+                
+
+                <div class="category_block">
+                    <button onclick="backgroundChange(0, 'jpg')" style="background-color: #E55451;" class="fancy-button" type="button"><i class="fa-solid fa-heart"></i>Predict Love Life</button>
+                    <button onclick="backgroundChange(1, 'png')" style="background-color: #E8A317;" class="fancy-button" type="button"><i class="fa-solid fa-brain"></i>Predict Academic Capacity</button>
+                    <button onclick="backgroundChange(2, 'jpg')" style="background-color: #11ed41;" class="fancy-button" type="button"><i class="fa-solid fa-notes-medical"></i>Predict Well Being</button>
+                    <button onclick="backgroundChange(3, 'jpg')" style="background-color: #1a85dc;" class="fancy-button" type="button"><i class="fa-solid fa-briefcase"></i>Predict Work Ethic</button>
+                    <button onclick="backgroundChange(4, 'png')" style="background-color: #14bb94;" class="fancy-button" type="button"><i class="fa-solid fa-house"></i>Predict Family Dynamic</button>
+                    <button onclick="backgroundChange(5, 'jpg')" style="background-color: #bb1441;" class="fancy-button" type="button"><i class="fa-solid fa-file-contract"></i>Predict Marriage Duration</button>
+                    
+                </div>
+                <input class="submit_button" type="submit" value="Submit">
+
+           </form>
+   
+       </div>
+   </div>
+   </div>
+{% endblock content %}
